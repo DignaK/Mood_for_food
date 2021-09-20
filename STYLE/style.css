@@ -5,14 +5,50 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container{
-    min-height: 300px;
+/* MENU */
+.menu-container{
+    color: black;
+    background-color: rgb(255, 255, 140);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2em;
 }
+
+.menu-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    color:black;
+}
+a:hover{
+    color: navy;
+}
+
+
+/* CONTENTS */
+.main, image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* FOOTER */
 .footer{
-    color: rgb(255, 255, 255);
-    background-color: rgb(24, 24, 24);
+    color: black;
+    background-color: rgb(255, 255, 140);
     padding: 10px 20px;
 }
 .copyright{
