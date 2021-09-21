@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
 
-$(".recipes_toggle").click(function(){
-    $(this).children().toggle();  
+$(".description").hide();
+$(".expand").click(function() {
+    $(this).parent().next(".description").toggle();
+    
 });
 
 });
-
 
