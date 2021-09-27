@@ -2,21 +2,36 @@
 <html>
     <head>
         <title>Shopping List</title>
-        <script src="jQuery-3.6.0.js"></script> 
-        <script src="CODE/code.js"></script>
         <link rel="stylesheet" href="STYLE/style.css">
     </head>
     <body>
+        <!-- MENU CONTAINER -->
+        <header class="menu-container">
+            <div class="menu-block">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="menu-block">
+                <a href="recipes.html">RECIPES</a>
+            </div>
+            <div class="menu-block">
+                SHOPPING
+            </div>
+        </header>
+
         <div class="container">
             <div class="sidebar">
                 <div class="shopping-list">Shopping list</div>
                 <!-- <button>Create new shopping list</button> -->
             </div>
+
             <div class="add-items">
                 <div>Add items to your shopping list</div>
-                <!-- <input id="add-item" name="add-item" type="text"/> -->
+                <input id="search" class="ingredients" type="search" placeholder="Add item"/>
                 <div class="all-ingredients"></div>
             </div>
         </div>
+
+        <script src="jQuery-3.6.0.js"></script> 
+        <script src="CODE/code.js"></script>
     </body>
 </html>
