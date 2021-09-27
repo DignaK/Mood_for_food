@@ -61,6 +61,14 @@ a:hover{
 
 
 /* SHOPPING */
+.count{
+    color: white;
+    background-color: rgb(143, 9, 9);
+    border-radius: 100%;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
 .container{
     padding: 10px 20px;
     display: flex;
@@ -81,4 +89,15 @@ a:hover{
     width: 200px;
     height: 50px;
     border: 1px solid black;
+}
+
+.ingredients-to-buy{
+    padding: 10px 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;  
 }
