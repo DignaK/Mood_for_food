@@ -99,12 +99,14 @@ function GetTextValue() {
 function addTitle(){ 
   let newTitle= document.getElementById("newTitle").value;
   document.getElementById("titleOfAddedRecipe").innerHTML=newTitle;
+  return false;
   // console.log("New title:"+ newTitle); 
 };
   
 function addInstructions(){ 
   let newInstructions= document.getElementById("newInstructions").value; 
   document.getElementById("instructionsOfAddedRecipe").innerHTML=newInstructions;
+  return false;
   // console.log("New instructions:"+ newInstructions); 
 };
   

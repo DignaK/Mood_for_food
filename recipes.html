@@ -28,14 +28,14 @@
 
 <!-- ADD USER RECIPE field-->
     <div id = "addRecipe" style="border: 1px solid black;">
-        <h3>Add your recipe</h3>
+        <h1>Add your recipe</h1>
         <form>
             Title <input id="newTitle" type="text">
             <button type="button" id="submit" onclick="addTitle()">Add</button>
             <div id="newIngredients"> Ingredients
                 <input type="button" id="btAdd" value="Add Ingredient" class="bt" />
                 <input type="button" id="btRemove" value="Remove Ingredient" class="bt" />
-                <input type="button" id="btRemoveAll" value="Remove All Ingredients" class="bt" /><br />
+                <!-- <input type="button" id="btRemoveAll" value="Remove All Ingredients" class="bt" /><br /> -->
             </div>
             Instructions <input id="newInstructions" type="text">
             <button type="button" id="submit" onclick="addInstructions()">Add</button>
@@ -46,7 +46,7 @@
 <!-- USER SAVED RECIPES -->
 <div id="newRecipe" style="border: 1px solid black">
 
-<h3>Your Recipes</h3>
+<h1>Your Recipes</h1>
 
 <h4 id="titleOfAddedRecipe"></h4>
 <h5>Ingredients</h5> <div id="ingredientsOfAddedRecipe"></div>
@@ -54,85 +54,39 @@
 </div>
 
 <!-- OUR RECIPES -->
-<div>       
-        <p class="expand">
-            <img class="image" src="IMAGES/for_recipes/peach_mango_carrot-SP.jpeg" width=200px>
-            <a href="#">Peach, Mango + Carrot Baby Food Puree</a>
-        </p>
-</div>        
-      
-<div class="description" style="border: 1px solid black;">
 
-            <p class="Description">
-                This Peach, Mango + Carrot Baby Food Puree is filled with 
-                peaches, mango, carrots and mint for a taste sensation. 
-                Great for 6+ months.
-            </p>
-
-         
-
-            <h3>Ingredients</h3>            
-            <p id="ingredients1"></p>
-            
-            <script>
-            const ingredients1 = ["2 peaches", "2 mangos", "4 carrots", "4-6 leaves mint", "1/2 cup liquid"];
-            
-            let text = "<ul>";
-            ingredients1.forEach(myFunction);
-            text += "</ul>";
-            document.getElementById("ingredients1").innerHTML = text;
-            
-            function myFunction(value) {
-              text += "<li>" + value + "</li>";
-            } 
-            </script>
-
-
-
-            <h3>Instructions</h3> 
-            <ol class="Instructions">            
-                <li>Place the carrots and liquid into a medium saucepan, cover, 
-                    and heat over medium heat for 10 minutes, stirring occasionally.</li>
-                <li>Add in the peaches and mangos, cover and cook for 3 
-                    additional minutes or until carrots can easily be pricked 
-                    with a fork. Let cool slighly.</li>
-                <li>Transfer all of the ingredients into a blender or food processor. 
-                    Add in the mint and puree for 1-2 minutes or until you have reached 
-                    your desired consistency, adding more liquid if needed in 1/4 cup 
-                    increments.</li>
-            </ol>
-
-            <button class="Add_to_shopping_list">ADD IT TO THE SHOPPING LIST </button>
-            
-      
-</div>
-
-
+<h1>Breakfast</h1>
 
 <div>       
     <p class="expand">
-        <img class="image" src="IMAGES/for_recipes/peach_mango_carrot-SP.jpeg" width=200px>
-        <a href="#">Peach, Mango + Carrot Baby Food Puree</a>
+        <img class="image" src="IMAGES/for_recipes/broccoli_egg_cup_baby_toddler-SP.jpeg" width=200px> </br>
+        <a href="#">Broccoli Egg Cups</a>
     </p>
 </div>        
   
 <div class="description" style="border: 1px solid black;">
 
         <p class="Description">
-            This Peach, Mango + Carrot Baby Food Puree is filled with 
-            peaches, mango, carrots and mint for a taste sensation. 
-            Great for 6+ months.
+            These Broccoli Egg Cups are a great on-the-go breakfast option for baby and toddler! 
+            These savory breakfast cups are filled with protein-rich eggs and shredded cheddar
+            cheese as well as nutrient dense broccoli. Serve warm at the breakfast table or 
+            packed cold for a morning playdate or school lunch.  
+            Great for baby-led weaning, toddlers and kids alike.
         </p>
 
      
 
         <h3>Ingredients</h3>            
-        <p id="ingredients2"></p>
+        <p id="ingrBreakfast1"></p>
         
         <script>
-        const ingredients2 = ["2 peaches", "2 mangos", "4 carrots", "4-6 leaves mint", "1/2 cup liquid"];
+        const ingrBreakfast1 = ["6 large eggs", "1/4 cup milk", "1/2 cup broccoli", "1/2 cup cheddar cheese", 
+        "salt and pepper"];
+        
+        let text = "<ul>";
+        ingrBreakfast1.forEach(myFunction);
         text += "</ul>";
-        document.getElementById("ingredients2").innerHTML = text;
+        document.getElementById("ingrBreakfast1").innerHTML = text;
         
         function myFunction(value) {
           text += "<li>" + value + "</li>";
@@ -143,15 +97,12 @@
 
         <h3>Instructions</h3> 
         <ol class="Instructions">            
-            <li>Place the carrots and liquid into a medium saucepan, cover, 
-                and heat over medium heat for 10 minutes, stirring occasionally.</li>
-            <li>Add in the peaches and mangos, cover and cook for 3 
-                additional minutes or until carrots can easily be pricked 
-                with a fork. Let cool slighly.</li>
-            <li>Transfer all of the ingredients into a blender or food processor. 
-                Add in the mint and puree for 1-2 minutes or until you have reached 
-                your desired consistency, adding more liquid if needed in 1/4 cup 
-                increments.</li>
+            <li>Heat oven to 180 degrees. Line 8 muffin tins with
+                 silicon muffin molds or generously spray to prevent sticking.</li>
+            <li>In a medium bowl, whisk the eggs and milk together.</li>
+            <li>Add in the broccoli, cheese, salt and pepper and stir until combined.</li>
+            <li>Pour the egg mixture into the muffin tins until 3/4 the way full.</li>
+            <li>Bake for 20-25 minutes or until eggs have set and the cheese is golden brown.</li>
         </ol>
 
         <button class="Add_to_shopping_list">ADD IT TO THE SHOPPING LIST </button>
@@ -159,6 +110,128 @@
   
 </div>
 
+<h1>Lunch</h1>
+
+<h1>Snacks</h1>
+<div>       
+    <p class="expand">
+        <img class="image" src="IMAGES/for_recipes/blueberry_avocado_muffins.png" width=200px> </br>
+        <a href="#">Blueberry Avocado Mini Muffins</a>
+    </p>
+</div>        
+  
+<div class="description" style="border: 1px solid black;">
+
+        <p class="Description">
+            These Blueberry Avocado Mini Muffins are loaded with fruit, healthy fats, 
+            and whole grains. Their mini size makes them perfect for small baby and
+            toddler hands, and they are great for baby-led weaning. Yum!
+        </p>
+
+     
+
+        <h3>Ingredients</h3>            
+        <p id="ingrSnacks1"></p>
+        
+        <script>
+        const ingrSnacks1 = ["1 cup white whole wheat flour", "1/2 tsp baking powder", 
+        "1/2 tsp baking soda", "4-6 leaves mint", "1/2 cup liquid", "1/4 tsp salt", 
+        "1/4 cup ripe avocado", "1/3 cup maple syrup", "1/3 cup mild olive oil", "1 egg", 
+        "1/4 cup liquids", "2/3 cup blueberries" ];
+        text += "</ul>";
+        document.getElementById("ingrSnacks1").innerHTML = text;
+        
+        function myFunction(value) {
+          text += "<li>" + value + "</li>";
+        } 
+        </script>
+
+
+
+        <h3>Instructions</h3> 
+        <ol class="Instructions">            
+            <li>PHeat oven to 375° F and spray or line a mini muffin tin.</li>
+            <li>Dry Ingredients: In a medium bowl, whisk together the flour, 
+                baking powder, baking soda, and salt.</li>
+            <li>Wet Ingredients: In a large bowl, with a hand mixer, mix 
+                the avocado until smooth and creamy. Add in the maple syrup 
+                and oil (or butter) and mix well. Add in the egg, milk, and 
+                vanilla extract and mix until completely combined.</li>
+            <li>Combine: Pour the flour mixture into wet ingredients. Gently 
+                fold the ingredients together until just combined. Do not overmix.</li>
+            <li>Add Blueberries: Gently fold in the blueberries.</li>
+            <li>Fill: Spoon the batter into the muffin tin, filling 3/4 way to the top.</li>
+            <li>Bake: Place the muffin pan into the oven for 12-15 minutes or until just golden.</li>
+            <li>Cool: Let cool in the pan for 5 minutes before transitioning the muffins onto 
+                a cooling rack. Serve and enjoy!</li>
+        </ol>
+
+        <button class="Add_to_shopping_list">ADD IT TO THE SHOPPING LIST </button>
+        
+  
+</div>
+<h1>Dinner</h1>
+      
+<div>       
+    <p class="expand">
+        <img class="image" src="IMAGES/for_recipes/easy_salsa_chicken_chicken_family_dinner-S-1.jpeg" width=200px> </br>
+        <a href="#">Easy Salsa Chicken Tacos</a>
+    </p>
+</div>        
+  
+<div class="description" style="border: 1px solid black;">
+
+        <p class="Description">
+            These are just a few suggestions on how I would serve this to my family. 
+            You can serve it any way that works for your family. Also, have fun with 
+            the toppings. Those are what taco night the best!
+        </p>
+
+     
+
+        <h3>Ingredients</h3>            
+        <p id="ingrDinner1"></p>
+        
+        <script>
+        const ingrDinner1 = ["1 pound boneless skinless chicken breasts", "1 cup salsa", 
+        "2 tsp mild chili powder", "1/2 tsp sea salt", "1/2 tsp paprika", "1/4 tsp garlic powder", 
+        "2 tbsp water"];
+        text += "</ul>";
+        document.getElementById("ingrDinner1").innerHTML = text;
+        
+        function myFunction(value) {
+          text += "<li>" + value + "</li>";
+        } 
+        </script>
+
+
+
+        <h3>Instructions</h3> 
+        <ol class="Instructions">            
+            <li>If using a thicker salsa (like the one pictured above) add in 2 tablespoons of water 
+                to the instant pot. If you are using a thinner salsa, usually found in the produce 
+                section of your grocery store, you can skip the added water.</li>
+            <li>Place the chicken into the Instant Pot. If doubling the recipe, 
+                make sure the chicken is in a simple layer at the bottom of the pot.</li>
+            <li>Sprinkle on the chili powder, garlic powder, paprika and salt.</li>
+            <li>Pour the salsa on top of the chicken. Do not mix.</li>
+            <li>Place lid on the Instant Pot and lock it into place. Move the steam valve to the 
+                seal position and manually set the Instant Pot to 10 minutes on high pressure. 
+                Let naturally release for 5 minutes and then manually release the rest of the pressure</li>
+            <li>Transfer the chicken to a cutting board using 2 forks, shred into bite-size pieces. 
+                This is a great time to keep in chicken separate for baby or toddler that doesn't 
+                like as much flavor.</li>
+            <li>Transfer the salsa liquid to another bowl or measuring cup – don't worry we will 
+                add it back in.</li>
+            <li>Place the shredded chicken back into the instant pot, adding back the salsa liquid a 
+                little at a time until you get the right chicken to salsa ration. Depending 
+                on how much water is in the chicken, I usually use half of the salsa.</li>
+        </ol>
+
+        <button class="Add_to_shopping_list">ADD IT TO THE SHOPPING LIST </button>
+        
+  
+</div>
 
 
 </body>
