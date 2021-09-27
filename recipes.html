@@ -11,6 +11,8 @@
 
     <body>
         <!-- <img class="image" src="IMAGES/WinniePooh.jpg"> -->
+        
+<!-- MENU CONTAINER -->
         <header class="menu-container">
             <div class="menu-block">
                 RECIPES
@@ -22,6 +24,35 @@
                 <a href="shopping.html">SHOPPING</a>
             </div>
         </header>
+
+
+<!-- ADD USER RECIPE field-->
+    <div id = "addRecipe" style="border: 1px solid black;">
+        <h3>Add your recipe</h3>
+        <form>
+            Title <input id="newTitle" type="text">
+        <div class="addIngredients"> <!--made a new class because of the add of input fields-->
+            <div>
+            Ingredients <input type="text" name="newIngredients[]" value=""/>
+            <a href="javascript:void(0);" class="add_button" title="Add field"><img src="IMAGES/plus.png" width="15px"/></a>
+            </div>
+        </div>
+            Instructions <input id="newInstructions" type="text">
+            <button type="button" id="submit" onclick="add()">Add recipe</button>
+        </form>
+    </div>
+
+<!-- USER SAVED RECIPES -->
+<div id="newRecipe" style="border: 1px solid black">
+
+<h3>Your Recipes</h3>
+
+<h4 id="titleOfAddedRecipe"></h4>
+<h5>Ingredients</h5> <div id="ingredientsOfAddedRecipe"></div>
+<h5>Instructions</h5> <div id="instructionsOfAddedRecipe"></div>
+</div>
+
+<!-- OUR RECIPES -->
 <div>       
         <p class="expand">
             <img class="image" src="IMAGES/for_recipes/peach_mango_carrot-SP.jpeg" width=200px>
@@ -73,6 +104,58 @@
             <button class="Add_to_shopping_list">ADD IT TO THE SHOPPING LIST </button>
             
       
+</div>
+
+
+
+<div>       
+    <p class="expand">
+        <img class="image" src="IMAGES/for_recipes/peach_mango_carrot-SP.jpeg" width=200px>
+        <a href="#">Peach, Mango + Carrot Baby Food Puree</a>
+    </p>
+</div>        
+  
+<div class="description" style="border: 1px solid black;">
+
+        <p class="Description">
+            This Peach, Mango + Carrot Baby Food Puree is filled with 
+            peaches, mango, carrots and mint for a taste sensation. 
+            Great for 6+ months.
+        </p>
+
+     
+
+        <h3>Ingredients</h3>            
+        <p id="ingredients2"></p>
+        
+        <script>
+        const ingredients2 = ["2 peaches", "2 mangos", "4 carrots", "4-6 leaves mint", "1/2 cup liquid"];
+        text += "</ul>";
+        document.getElementById("ingredients2").innerHTML = text;
+        
+        function myFunction(value) {
+          text += "<li>" + value + "</li>";
+        } 
+        </script>
+
+
+
+        <h3>Instructions</h3> 
+        <ol class="Instructions">            
+            <li>Place the carrots and liquid into a medium saucepan, cover, 
+                and heat over medium heat for 10 minutes, stirring occasionally.</li>
+            <li>Add in the peaches and mangos, cover and cook for 3 
+                additional minutes or until carrots can easily be pricked 
+                with a fork. Let cool slighly.</li>
+            <li>Transfer all of the ingredients into a blender or food processor. 
+                Add in the mint and puree for 1-2 minutes or until you have reached 
+                your desired consistency, adding more liquid if needed in 1/4 cup 
+                increments.</li>
+        </ol>
+
+        <button class="Add_to_shopping_list">ADD IT TO THE SHOPPING LIST </button>
+        
+  
 </div>
 
 
