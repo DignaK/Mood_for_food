@@ -71,3 +71,14 @@ a:hover{
     align-items: left;
     min-width: 200px;
 }
+
+.ingredients{
+    padding: 10px 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
