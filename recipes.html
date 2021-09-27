@@ -31,16 +31,17 @@
         <h3>Add your recipe</h3>
         <form>
             Title <input id="newTitle" type="text">
-        <div class="addIngredients"> <!--made a new class because of the add of input fields-->
-            <div>
-            Ingredients <input type="text" name="newIngredients[]" value=""/>
-            <a href="javascript:void(0);" class="add_button" title="Add field"><img src="IMAGES/plus.png" width="15px"/></a>
+            <button type="button" id="submit" onclick="addTitle()">Add</button>
+            <div id="newIngredients"> Ingredients
+                <input type="button" id="btAdd" value="Add Ingredient" class="bt" />
+                <input type="button" id="btRemove" value="Remove Ingredient" class="bt" />
+                <input type="button" id="btRemoveAll" value="Remove All Ingredients" class="bt" /><br />
             </div>
-        </div>
             Instructions <input id="newInstructions" type="text">
-            <button type="button" id="submit" onclick="add()">Add recipe</button>
+            <button type="button" id="submit" onclick="addInstructions()">Add</button>
         </form>
     </div>
+
 
 <!-- USER SAVED RECIPES -->
 <div id="newRecipe" style="border: 1px solid black">
@@ -160,6 +161,5 @@
 
 
 
-
-    </body>
+</body>
 </html>
