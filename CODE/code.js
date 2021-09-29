@@ -1,3 +1,5 @@
+// Initial version for Shopping
+
 let ingredients = [
     "CARROT",
     "MANGO",
@@ -7,8 +9,10 @@ let ingredients = [
 
 let shoppingList = [];
 
+// Count of items in shopping list (notification in header-menu)
 let count = shoppingList.length;
 let div0 = document.querySelector("div.menu-shopping");
+console.info(count);
 // šis vēl līdz galam nestrādā
 if(count != 0){
     let notification = document.createElement("div");
@@ -59,30 +63,10 @@ $(document).ready(function(){
             h2.className = "ingredients-to-buy";
             h2.innerText = $(this).text();
             div2.append(h2);
+            shoppingList.push()
         }
     )
 })
 
-
-
-// function redraw(){
-//     generateMenuItems($("#menuItems"), menuItems, menuFinal);
-//     generateMenuItems($("#menuFinal"), menuFinal, menuItems);
-// }
-
-// function generateMenuItems (container,data,destination){
-//     container.empty();
-//     for(let i=0;i<data.length;i++){
-//         const itemTitle = data[i];
-//         const menuItem = $(document.createElement("div"));
-//         menuItem.text(itemTitle);
-//         container.append(menuItem);
-//         menuItem.click(function(){
-//             data.splice(i,1);
-//             destination.push(itemTitle);
-//             redraw();
-//         })
-//     }
-// }
 
 
