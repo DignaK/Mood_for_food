@@ -61,6 +61,13 @@ a:hover{
 
 
 /* SHOPPING */
+.count{
+    color: white;
+    background-color: rgb(143, 9, 9);
+    border-radius: 100%;
+    margin-left: 5px;
+    padding: 0 5px;
+}
 .container{
     padding: 10px 20px;
     display: flex;
@@ -84,19 +91,6 @@ a:hover{
 }
 
 
-
-/* RECIPES */
-.recipesBreakfast{
-    /* float:left; */
-    /* width: auto; */
-}
-.expand{
-    display:block;
-    margin: 0px auto;
-    padding: 0px 15px 0px 15px;
-    border: 1px solid black;
-  
-}
 
 
 
