@@ -82,3 +82,21 @@ a:hover{
     height: 50px;
     border: 1px solid black;
 }
+
+
+
+/* RECIPES */
+.recipesBreakfast{
+    /* float:left; */
+    /* width: auto; */
+}
+.expand{
+    display:block;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    border: 1px solid black;
+  
+}
+
+
+

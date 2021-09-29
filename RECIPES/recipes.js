@@ -6,10 +6,13 @@ $(".expand").click(function() {
     $(this).parent().next(".description").toggle();
     
 });
+
+
+
 });
 
 
-
+// ADD USER RECIPE INGREDIENTS
 $(document).ready(function() {
 
     let iCnt = 0;
