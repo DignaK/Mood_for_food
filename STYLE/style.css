@@ -100,21 +100,22 @@ a:hover{
 #recipesLunch,
 #recipesSnacks,
 #recipesDinner{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
+.titleOfRecipe{
+    background-color: rgb(255, 255, 199);
 
+}
 .expand{
     padding: 10px 20px;
 }
 
-.description{
-    padding:30px;
-}
+
 
 .image{
     width: 300px;
