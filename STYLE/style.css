@@ -95,6 +95,42 @@ a:hover{
 }
 
 
+/* RECIPES */
+#recipesBreakfast,
+#recipesLunch,
+#recipesSnacks,
+#recipesDinner{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.expand{
+    padding: 10px 20px;
+}
+
+.description{
+    padding:30px;
+}
+
+.image{
+    width: 300px;
+   
+}
+.image:hover{
+    color: rgba(253, 253, 253, 0.459);
+}
 
 
+a{
+font-size: 20px;
+max-width: 300px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
 
+}
