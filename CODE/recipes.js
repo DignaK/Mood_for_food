@@ -9,9 +9,14 @@ $(".expand").click(function() {
     
 });
 
-$(document).on("click",".Add_to_shopping_list",function(){
-    $("#ingrBreakfast1").append($("shopping.html/.shopping-list").html());
+$(document).on("click","#addToListBreakfast1",function(){
+    console.info(text1)
+    $(text1).appendTo($("#breakfastShoppingList").html());
 });
+  
+
+
+        
   
 
 

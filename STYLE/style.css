@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(19, 19, 19);
 }
 
 
@@ -15,6 +16,8 @@
     display: flex;
     justify-content: flex-start;
     font-size: 1.2em;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .menu-block{
@@ -96,6 +99,38 @@ a:hover{
 
 
 /* RECIPES */
+
+.welcomeImage{
+    margin-top:20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+.logoImage{
+    margin-top:20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.infoImage{
+    margin-top:20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.title{
+    background-color: rgb(255, 255, 140);
+    color: rgb(26, 26, 26);
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
 #recipesBreakfast,
 #recipesLunch,
 #recipesSnacks,
@@ -108,21 +143,44 @@ a:hover{
     align-items: center;
 }
 .titleOfRecipe{
-    background-color: rgb(255, 255, 199);
+    background-color: rgb(204, 204, 204);
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
 
 }
 .expand{
     padding: 10px 20px;
+    
 }
-
-
 
 .image{
     width: 300px;
-   
+    transition: all .2s ease-in-out; 
 }
-.image:hover{
-    color: rgba(253, 253, 253, 0.459);
+
+.image:hover { 
+    transform: scale(1.04); 
+}
+
+.description{
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 199);
+    list-style-position: inside;
+
+}
+button{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 40%;
+    font-size: 15px;
 }
 
 
