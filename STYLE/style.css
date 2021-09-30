@@ -100,12 +100,17 @@ a:hover{
 
 /* RECIPES */
 
-.welcomeImage{
-    margin-top:20px;
+
+
+
+
+.slideshow-container{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 80%;
+    text-align: center;
+
 }
 .logoImage{
     margin-top:20px;
@@ -113,19 +118,13 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
 }
-.infoImage{
-    margin-top:20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
-}
+
 
 .title{
     background-color: rgb(255, 255, 140);
     color: rgb(26, 26, 26);
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 20px;

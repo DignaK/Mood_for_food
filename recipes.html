@@ -24,8 +24,57 @@
                 <a href="shopping.html">SHOPPING</a>
             </div>
         </header>
-<img class="welcomeImage" src="IMAGES/Welcome! (1).jpg" width="400px">
-<img class="infoImage" src="IMAGES/Recipes for all family.jpg" width="400px">
+
+<!--  SLIDESHOW-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="IMAGES/Welcome! (3).jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="IMAGES/Recipes for all family (1).jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="IMAGES/BY MOODY FOODIES (1).jpg" style="width:50%">
+            </div>
+
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000);
+            }
+            </script>
+
+
 <!-- ADD USER RECIPE field
     <div id = "addRecipe" style="border: 1px solid black;">
         <h1>Add your recipe</h1>
@@ -887,6 +936,7 @@
 
 <h2>For BREAKFAST you have to buy:</h2>
 <div id="breakfastShoppingList"></div>
+
 
 <h2>For LUNCH you have to buy:</h2>
 <div id="lunchShoppingList"></div>
