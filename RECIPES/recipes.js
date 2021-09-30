@@ -1,3 +1,5 @@
+console.info("works");
+
 $(document).ready(function(){
 
 //MAKE EXPAND FOR OUR RECIPES
@@ -6,6 +8,11 @@ $(".expand").click(function() {
     $(this).parent().next(".description").toggle();
     
 });
+
+$(document).on("click",".Add_to_shopping_list",function(){
+    $("#ingrBreakfast1").append($("shopping.html/.shopping-list").html());
+});
+  
 
 
 
@@ -113,3 +120,4 @@ function addInstructions(){
   // console.log("New instructions:"+ newInstructions); 
 };
   
+
