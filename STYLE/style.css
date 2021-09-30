@@ -86,7 +86,7 @@ a:hover{
     min-width: 200px;
 }
 
-.all-ingredients h2, .ingredients{
+.all-ingredients h2, .ingredients, .shopping-list h2{
     padding: 10px 20px;
     margin: 10px;
     display: flex;
