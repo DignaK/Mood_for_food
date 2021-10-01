@@ -24,12 +24,12 @@ $(document).ready(()=>{
             generateIngredientsList($(".all-ingredients"), ingredients, shoppingList);
         }
         generateIngredientsList($(".shopping-list"), shoppingList, ingredients);
-        generateBreakfastList($("#breakfastShoppingList"),ingrBreakfast1,breakfastList);
-        generateLunchList($("#lunchShoppingList"),ingrLunch5,lunchList);
-        generateLunchList($("#snacksShoppingList"),ingrSnacks9,snacksList);
-        generateLunchList($("#dinnerShoppingList"),ingrDinner13,dinnerList);
-        
     }
+    
+    generateBreakfastList($("#breakfastShoppingList"),ingrBreakfast1,breakfastList);
+    generateLunchList($("#lunchShoppingList"),ingrLunch5,lunchList);
+    generateLunchList($("#snacksShoppingList"),ingrSnacks9,snacksList);
+    generateLunchList($("#dinnerShoppingList"),ingrDinner13,dinnerList);
 
     function generateIngredientsList (container,data,destination){
         container.empty();
