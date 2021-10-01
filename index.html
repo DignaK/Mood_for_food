@@ -13,6 +13,7 @@
             <div class="menu-block menu-home">HOME</div>
             <div class="menu-block menu-recipes">RECIPES</div>
             <div class="menu-block menu-shopping">SHOPPING</div>
+            <div class="count"></div>
         </header>
 
         <!-- HOME -->
@@ -893,34 +894,28 @@
 
         <!-- SHOPPING -->
         <div class="shopping">
-            <h1 class="title">YOUR SHOPPING LIST</h1>
-
-            <h2>For BREAKFAST you have to buy:</h2>
-            <div id="breakfastShoppingList"></div>
-            
-            
-            <h2>For LUNCH you have to buy:</h2>
-            <div id="lunchShoppingList"></div>
-            
-            <h2>For SNACKS you have to buy:</h2>
-            <div id="snacksShoppingList"></div>
-            
-            <h2>For DINNER you have to buy:</h2>
-            <div id="dinnerShoppingList"></div>
-
+            <h3 class="titleForShopping">YOUR SHOPPING LIST</h3>
             <div class="container">
                 <div class="sidebar">
-                    <div>Shopping list</div>
                     <div class="shopping-list"></div>
                     <!-- <button>Create new shopping list</button> -->
                 </div>
-
                 <div class="add-items">
                     <div>Add items to your shopping list</div>
                     <input id="search" class="ingredients" type="search" placeholder="Add item"/>
                     <div class="all-ingredients"></div>
                 </div>
             </div>
+            <h3 class="titleForShopping">For BREAKFAST you have to buy:</h3>
+            <div id="breakfastShoppingList"></div>
+            <h3 class="titleForShopping">For LUNCH you have to buy:</h3>
+            <div id="lunchShoppingList"></div>            
+            <h3 class="titleForShopping">For SNACKS you have to buy:</h3>
+            <div id="snacksShoppingList"></div>            
+            <h3 class="titleForShopping">For DINNER you have to buy:</h3>
+            <div id="dinnerShoppingList"></div>
+
+
         </div>
 
         <!-- SCRIPTS -->

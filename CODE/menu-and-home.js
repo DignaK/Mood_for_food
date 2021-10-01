@@ -1,24 +1,24 @@
 $(document).ready(()=>{
-    $(".recipes").hide();
-    $(".shopping").hide();
-})
+  $(".recipes").hide();
+  $(".shopping").hide();
 
-$(".menu-home").click(()=>{
-    $(".slideshow-container").show();
-    $(".recipes").hide();
-    $(".shopping").hide();
-})
+  $(".menu-home").click(()=>{
+      $(".slideshow-container").show();
+      $(".recipes").hide();
+      $(".shopping").hide();
+  })
 
-$(".menu-recipes").click(()=>{
-    $(".slideshow-container").hide();
-    $(".recipes").show();
-    $(".shopping").hide();
-})
+  $(".menu-recipes").click(()=>{
+      $(".slideshow-container").hide();
+      $(".recipes").show();
+      $(".shopping").hide();
+  })
 
-$(".menu-shopping").click(()=>{
-    $(".slideshow-container").hide();
-    $(".recipes").hide();
-    $(".shopping").show();
+  $(".menu-shopping").click(()=>{
+      $(".slideshow-container").hide();
+      $(".recipes").hide();
+      $(".shopping").show();
+  })
 })
 
 // HOME

@@ -7,19 +7,15 @@
 }
 
 
-/* INDEX */
-/* Menu */
+/* MENU */
 .menu-container{
     color: black;
     background-color: rgb(255, 255, 140);
-    padding: 10px 20px;
+    padding: 10px 60px;
     display: flex;
     justify-content: flex-start;
     font-size: 1.2em;
-    margin-left: 90px;
-    margin-right: 90px;
 }
-
 .menu-block{
     display: flex;
     justify-content: flex-start;
@@ -27,7 +23,17 @@
     min-width: 100px;
     cursor: pointer;
 }
-
+.count{
+    color: white;
+    background-color: rgb(143, 9, 9);
+    border-radius: 100%;
+    margin-left: 5px;
+    padding: 0 5px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
 /* a:link{
     color: black;
 }
@@ -42,68 +48,12 @@ a:hover{
 } */
 
 
-/* Contents */
-.main, image{
+/* HOME */
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-/* Footer */
-.footer{
-    color: black;
-    background-color: rgb(255, 255, 140);
-    padding: 10px 20px;
-}
-.copyright{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
-}
-
-
-/* SHOPPING */
-.count{
-    color: white;
-    background-color: rgb(143, 9, 9);
-    border-radius: 100%;
-    margin-left: 5px;
-    padding: 0 5px;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-}
-.container{
-    padding: 10px 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.sidebar{
-    align-items: left;
-    min-width: 200px;
-}
-
-.all-ingredients h2, .ingredients, .shopping-list h2{
-    padding: 10px 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;
-    width: 200px;
-    height: 50px;
-    border: 1px solid black;
-}
-
-
-/* RECIPES */
-
-
-
-
-
 .slideshow-container{
     display: block;
     margin-left: auto;
@@ -120,6 +70,7 @@ a:hover{
 }
 
 
+/* RECIPES */
 .title{
     background-color: rgb(255, 255, 140);
     color: rgb(26, 26, 26);
@@ -129,7 +80,6 @@ a:hover{
     margin-right: 60px;
     margin-bottom: 20px;
 }
-
 #recipesBreakfast,
 #recipesLunch,
 #recipesSnacks,
@@ -153,16 +103,13 @@ a:hover{
     padding: 10px 20px;
     
 }
-
 .image{
     width: 300px;
     transition: all .2s ease-in-out; 
 }
-
 .image:hover { 
     transform: scale(1.04); 
 }
-
 .description{
     width: 1000px;
     padding-top: 10px;
@@ -181,8 +128,6 @@ button{
     border-radius: 40%;
     font-size: 15px;
 }
-
-
 a{
 font-size: 20px;
 max-width: 300px;
@@ -190,5 +135,44 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 align-items: center;
+}
 
+
+/* SHOPPING */
+.container{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.sidebar{
+    align-items: left;
+    min-width: 300px;
+}
+.all-ingredients h2, .ingredients, .shopping-list h2{
+    padding: 10px 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
+.titleForShopping{
+    background-color: rgb(204, 204, 204);
+    text-align: left;
+    padding: 10px 60px;
+}
+
+
+/* Footer */
+.footer{
+    color: black;
+    background-color: rgb(255, 255, 140);
+    padding: 10px 20px;
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
 }
