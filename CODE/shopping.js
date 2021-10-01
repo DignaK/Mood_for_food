@@ -28,8 +28,8 @@ $(document).ready(()=>{
     
     generateBreakfastList($("#breakfastShoppingList"),ingrBreakfast1,breakfastList);
     generateLunchList($("#lunchShoppingList"),ingrLunch5,lunchList);
-    generateLunchList($("#snacksShoppingList"),ingrSnacks9,snacksList);
-    generateLunchList($("#dinnerShoppingList"),ingrDinner13,dinnerList);
+    generateSnacksList($("#snacksShoppingList"),ingrSnacks9,snacksList);
+    generateDinnerList($("#dinnerShoppingList"),ingrDinner13,dinnerList);
 
     function generateIngredientsList (container,data,destination){
         container.empty();
@@ -89,7 +89,8 @@ $(document).ready(()=>{
             shoppingList.length + 
             breakfastList.length + 
             lunchList.length +
-            snacksList.length;
+            snacksList.length +
+            lunchList.length;
         if(count != 0){
             let notification = document.querySelector(".count");
             notification.innerText = count;
@@ -116,7 +117,7 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                redraw();
+                // redraw();
                 counter();
             }
         })
@@ -138,7 +139,7 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                redraw();
+                // redraw();
                 counter();
             }
         })
@@ -160,7 +161,7 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                redraw();
+                // redraw();
                 counter();
             }
         })
@@ -182,7 +183,7 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                redraw();
+                // redraw();
                 counter();
             }
         })
