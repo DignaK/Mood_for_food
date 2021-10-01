@@ -242,13 +242,13 @@ align-items: center;
 h2{
     font-weight: lighter;
     font-size: medium;
-    margin-left: 60px;
+    margin-left: 80px;
     margin-right: 60px;
     margin-top: 5px;
 }
 
 .add-items{
-    margin-left: 60px;
+    margin-left: 80px;
     margin-right: 60px;
     margin-top: 5px;
 }
@@ -280,3 +280,11 @@ h2{
     height: 50px;
     border: 1px solid black;
 } */
+
+input[type=checkbox] {
+    border: 1px solid black;
+    margin-left: 60px;
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+}
