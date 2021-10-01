@@ -12,6 +12,7 @@ $(document).ready(()=>{
     $(".count").hide();
     redraw();
     counter();
+})
 
     function redraw(){
         if ($("#search").val().length) {
@@ -91,12 +92,32 @@ $(document).ready(()=>{
 
 
     // ADD RECIPE TO SHOPPING LIST
+    // function generateBreakfastList (container,data,destination){
+    //     $(".addButton").click(function(){
+    //         for(let i=0;i<ingrBreakfast1.length;i++){
+    //             const buttonId = $(this).attr("id");
+    //             console.info(buttonId);
+    //             const ingredientTitle = data[i];
+    //             const ingredientToBuy = $(document.createElement("h2"));
+    //             ingredientToBuy.text(ingredientTitle);
+    //             ingredientToBuy.addClass("recipeIngredients");
+    //             container.append(ingredientToBuy);
+    //             data.slice();
+    //             destination.push(ingredientTitle);
+    //             redraw();
+    //             counter();
+    //         }
+    //     })
+    // }
+
     function generateBreakfastList (container,data,destination){
-        $(".addButton").click(function(){
+        $("#addToListBreakfast1").click(function (){
             for(let i=0;i<ingrBreakfast1.length;i++){
-                const buttonId = $(this).attr("id");
-                console.info(buttonId);
                 const ingredientTitle = data[i];
+                const checkBox = $(document.createElement("input")).prop({
+                    type: "checkbox"
+                }); 
+                container.append(checkBox);
                 const ingredientToBuy = $(document.createElement("h2"));
                 ingredientToBuy.text(ingredientTitle);
                 ingredientToBuy.addClass("recipeIngredients");
@@ -107,6 +128,7 @@ $(document).ready(()=>{
                 counter();
             }
         })
+        $(".recipeIngredients").click(()=>{
+            // jāizvāc elements
+        })
     }
-
-})
