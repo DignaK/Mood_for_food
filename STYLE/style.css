@@ -141,26 +141,7 @@ align-items: center;
 }
 
 
-/* SHOPPING */
-.container{
-    padding: 10px 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-.sidebar{
-    align-items: left;
-    min-width: 300px;
-}
-.all-ingredients h2, .ingredients, .shopping-list h2{
-    padding: 10px 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;
-    width: 200px;
-    height: 50px;
-    border: 1px solid black;
-}
+
 
 
 
@@ -258,3 +239,44 @@ align-items: center;
     margin-top: 20px;
 }
 
+h2{
+    font-weight: lighter;
+    font-size: medium;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 5px;
+}
+
+.add-items{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 5px;
+}
+
+
+.container{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+.sidebar{
+    margin-top: 20px;
+    margin-left: -15px;
+    align-items: left;
+    min-width: 300px;
+    
+}
+
+
+/* .all-ingredients h2, .ingredients, .shopping-list h2{
+    padding: 10px 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+} */
