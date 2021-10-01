@@ -31,7 +31,7 @@ $(document).ready(()=>{
             const ingredientToBuy = $(document.createElement("h2"));
             ingredientToBuy.text(ingredientTitle);
             container.append(ingredientToBuy);
-            ingredientToBuy.click(()=>{
+            ingredientToBuy.click(function(){
                 data.splice(i,1);
                 if ($(this).parent().hasClass('shopping-list') && $("#search").val().length) {
                     $("#search").val("");
@@ -92,15 +92,11 @@ $(document).ready(()=>{
 
     // ADD RECIPE TO SHOPPING LIST
     function generateBreakfastList (container,data,destination){
-        $(".addButton").click(()=>{
-            const buttonId = $(this).attr("id");
-            console.info(buttonId);
+        $(".addButton").click(function(){
             for(let i=0;i<ingrBreakfast1.length;i++){
+                const buttonId = $(this).attr("id");
+                console.info(buttonId);
                 const ingredientTitle = data[i];
-                const checkBox = $(document.createElement("input")).prop({
-                    type: "checkbox"
-                }); 
-                container.append(checkBox);
                 const ingredientToBuy = $(document.createElement("h2"));
                 ingredientToBuy.text(ingredientTitle);
                 ingredientToBuy.addClass("recipeIngredients");
@@ -111,10 +107,6 @@ $(document).ready(()=>{
                 counter();
             }
         })
-        $(".recipeIngredients").click(()=>{
-            // jāizvāc elements
-        })
     }
-    
 
 })
