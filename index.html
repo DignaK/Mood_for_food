@@ -85,54 +85,43 @@
         <h1 class="title">OUR BEST RECIPES</h1>
         <h1 class="titleOfRecipe">Breakfast</h1>
         <div id="recipesBreakfast">
-        
         <div>        
             <p class="expand">
-                <img class="image" src="IMAGES/for_recipes/egg_cups_baby_toddler-S.jpeg" width=200px> </br>
-                <a href="#">Broccoli Egg Cups</a>
+            <img class="image" src="IMAGES/for_recipes/egg_cups_baby_toddler-S.jpeg" width=200px> </br>
+            <a href="#">Broccoli Egg Cups</a>
             </p>
         </div>        
-        
         <div class="description">
-        
-                <p class="Description">
-                    These Broccoli Egg Cups are a great on-the-go breakfast option for baby and toddler! 
-                    These savory breakfast cups are filled with protein-rich eggs and shredded cheddar
-                    cheese as well as nutrient dense broccoli. Serve warm at the breakfast table or 
-                    packed cold for a morning playdate or school lunch.  
-                    Great for baby-led weaning, toddlers and kids alike.
-                </p>
-        
+            <p class="Description">
+            These Broccoli Egg Cups are a great on-the-go breakfast option for baby and toddler! 
+            These savory breakfast cups are filled with protein-rich eggs and shredded cheddar
+            cheese as well as nutrient dense broccoli. Serve warm at the breakfast table or 
+            packed cold for a morning playdate or school lunch.  
+            Great for baby-led weaning, toddlers and kids alike.
+            </p>
             <h3>Ingredients</h3>            
-                <p id="ingrBreakfast1"></p>
-                
-                <script>
+            <p id="ingrBreakfast1"></p>
+            <script>
                 const ingrBreakfast1 = ["6 eggs", "1/4 cup milk", "1/2 cup broccoli", "1/2 cup cheddar cheese", 
                 "salt and pepper"];
-                
                 let text1 = "<ul>";
                 ingrBreakfast1.forEach(myFunction1);
                 text1 += "</ul>";
                 document.getElementById("ingrBreakfast1").innerHTML = text1;
-                
                 function myFunction1(value1) {
                 text1 += "<li>" + value1 + "</li>";
                 } 
-                </script>
-        
+            </script>
             <h3>Instructions</h3> 
-                <ol class="Instructions">            
-                    <li>Heat oven to 180 degrees. Line 8 muffin tins with
-                        silicon muffin molds or generously spray to prevent sticking.</li>
-                    <li>In a medium bowl, whisk the eggs and milk together.</li>
-                    <li>Add in the broccoli, cheese, salt and pepper and stir until combined.</li>
-                    <li>Pour the egg mixture into the muffin tins until 3/4 the way full.</li>
-                    <li>Bake for 20-25 minutes or until eggs have set and the cheese is golden brown.</li>
-                </ol>
-        
-                <button id="addToListBreakfast1">ADD IT TO THE SHOPPING LIST </button>
-                
-        
+            <ol class="Instructions">            
+                <li>Heat oven to 180 degrees. Line 8 muffin tins with
+                    silicon muffin molds or generously spray to prevent sticking.</li>
+                <li>In a medium bowl, whisk the eggs and milk together.</li>
+                <li>Add in the broccoli, cheese, salt and pepper and stir until combined.</li>
+                <li>Pour the egg mixture into the muffin tins until 3/4 the way full.</li>
+                <li>Bake for 20-25 minutes or until eggs have set and the cheese is golden brown.</li>
+            </ol>
+            <button id="addToListBreakfast1">ADD IT TO THE SHOPPING LIST </button>
         </div>
         
         <div>       

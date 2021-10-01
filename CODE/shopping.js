@@ -6,6 +6,7 @@ let ingredients = [
 ];
 let shoppingList = [];
 let searchResults = [];
+let breakfastList = [];
 
 $(document).ready(()=>{
     $(".count").hide();
@@ -14,31 +15,32 @@ $(document).ready(()=>{
 
     function redraw(){
         if ($("#search").val().length) {
-            generateMenuItems($(".all-ingredients"), searchResults, shoppingList);
+            generateIngredientsList($(".all-ingredients"), searchResults, shoppingList);
         }
         else {
-            generateMenuItems($(".all-ingredients"), ingredients, shoppingList);
+            generateIngredientsList($(".all-ingredients"), ingredients, shoppingList);
         }
-        generateMenuItems($(".shopping-list"), shoppingList, ingredients);
+        generateIngredientsList($(".shopping-list"), shoppingList, ingredients);
+        generateBreakfastList($("#breakfastShoppingList"),ingrBreakfast1,breakfastList);
     }
 
-    function generateMenuItems (container,data,destination){
+    function generateIngredientsList (container,data,destination){
         container.empty();
         for(let i=0;i<data.length;i++){
-            const itemTitle = data[i];
-            const menuItem = $(document.createElement("h2"));
-            menuItem.text(itemTitle);
-            container.append(menuItem);
-            menuItem.click(function(){
+            const ingredientTitle = data[i];
+            const ingredientToBuy = $(document.createElement("h2"));
+            ingredientToBuy.text(ingredientTitle);
+            container.append(ingredientToBuy);
+            ingredientToBuy.click(()=>{
                 data.splice(i,1);
                 if ($(this).parent().hasClass('shopping-list') && $("#search").val().length) {
                     $("#search").val("");
                 }
                 if ($("#search").val().length) {
-                    let j = ingredients.indexOf(itemTitle);
+                    let j = ingredients.indexOf(ingredientTitle);
                     ingredients.splice(j,1);
                 }
-                destination.push(itemTitle);
+                destination.push(ingredientTitle);
                 redraw();
                 counter();
             });
@@ -60,7 +62,6 @@ $(document).ready(()=>{
     searchResults.forEach(element => {
         let h2 = document.createElement('h2');
         h2.innerText = element;
-        // h2.className = "ingredients";
         searchResultsContainer.append(h2);
         $(h2).click(function(){
             let i = searchResults.indexOf(element);
@@ -77,8 +78,7 @@ $(document).ready(()=>{
 
     // Count of items in shopping list (notification in header)
     function counter(){
-        let count = shoppingList.length;
-    // šis vēl līdz galam nestrādā
+        let count = shoppingList.length + breakfastList.length;
         if(count != 0){
             let notification = document.querySelector(".count");
             notification.innerText = count;
@@ -91,7 +91,24 @@ $(document).ready(()=>{
 
 
     // ADD RECIPE TO SHOPPING LIST
+    function generateBreakfastList (container,data,destination){
+        $("#addToListBreakfast1").click(()=>{
+            for(let i=0;i<ingrBreakfast1.length;i++){
+                const ingredientTitle = data[i];
+                const ingredientToBuy = $(document.createElement("h2"));
+                ingredientToBuy.text(ingredientTitle);
+                ingredientToBuy.addClass("recipeIngredients");
+                container.append(ingredientToBuy);
+                data.slice();
+                destination.push(ingredientTitle);
+                redraw();
+                counter();
+            }
+        })
+        $(".recipeIngredients").click(()=>{
+            // jāizvāc elements
+        })
+    }
     
-
 
 })
