@@ -161,11 +161,7 @@ align-items: center;
     height: 50px;
     border: 1px solid black;
 }
-.titleForShopping{
-    background-color: rgb(204, 204, 204);
-    text-align: left;
-    padding: 10px 60px;
-}
+
 
 
 /* Footer */
@@ -242,3 +238,23 @@ align-items: center;
 .dot:hover {
     background-color: #717171
 }
+
+
+/* SHOPPING */
+.shoppingListImage{
+    margin-top:20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleForShopping{
+    /* font-family: Garamond, serif; */
+    font-weight: lighter;
+    background-color: rgba(204, 204, 204, 0.507);
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
