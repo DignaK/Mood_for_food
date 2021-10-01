@@ -7,12 +7,14 @@ let ingredients = [
 let shoppingList = [];
 let searchResults = [];
 let breakfastList = [];
+let lunchList = [];
+let snacksList = [];
+let dinnerList = [];
 
 $(document).ready(()=>{
     $(".count").hide();
     redraw();
     counter();
-})
 
     function redraw(){
         if ($("#search").val().length) {
@@ -23,6 +25,10 @@ $(document).ready(()=>{
         }
         generateIngredientsList($(".shopping-list"), shoppingList, ingredients);
         generateBreakfastList($("#breakfastShoppingList"),ingrBreakfast1,breakfastList);
+        generateLunchList($("#lunchShoppingList"),ingrLunch5,lunchList);
+        generateLunchList($("#snacksShoppingList"),ingrSnacks9,snacksList);
+        generateLunchList($("#dinnerShoppingList"),ingrDinner13,dinnerList);
+        
     }
 
     function generateIngredientsList (container,data,destination){
@@ -79,7 +85,11 @@ $(document).ready(()=>{
 
     // Count of items in shopping list (notification in header)
     function counter(){
-        let count = shoppingList.length + breakfastList.length;
+        let count = 
+            shoppingList.length + 
+            breakfastList.length + 
+            lunchList.length +
+            snacksList.length;
         if(count != 0){
             let notification = document.querySelector(".count");
             notification.innerText = count;
@@ -92,24 +102,6 @@ $(document).ready(()=>{
 
 
     // ADD RECIPE TO SHOPPING LIST
-    // function generateBreakfastList (container,data,destination){
-    //     $(".addButton").click(function(){
-    //         for(let i=0;i<ingrBreakfast1.length;i++){
-    //             const buttonId = $(this).attr("id");
-    //             console.info(buttonId);
-    //             const ingredientTitle = data[i];
-    //             const ingredientToBuy = $(document.createElement("h2"));
-    //             ingredientToBuy.text(ingredientTitle);
-    //             ingredientToBuy.addClass("recipeIngredients");
-    //             container.append(ingredientToBuy);
-    //             data.slice();
-    //             destination.push(ingredientTitle);
-    //             redraw();
-    //             counter();
-    //         }
-    //     })
-    // }
-
     function generateBreakfastList (container,data,destination){
         $("#addToListBreakfast1").click(function (){
             for(let i=0;i<ingrBreakfast1.length;i++){
@@ -128,7 +120,75 @@ $(document).ready(()=>{
                 counter();
             }
         })
-        $(".recipeIngredients").click(()=>{
-            // jāizvāc elements
+    }
+    $(document).on("click","#addToListBreakfast1",function(){
+        $(this).attr('disabled', true);
+    });
+    function generateLunchList (container,data,destination){
+        $("#addToListLunch5").click(function (){
+            for(let i=0;i<ingrLunch5.length;i++){
+                const ingredientTitle = data[i];
+                const checkBox = $(document.createElement("input")).prop({
+                    type: "checkbox"
+                }); 
+                container.append(checkBox);
+                const ingredientToBuy = $(document.createElement("h2"));
+                ingredientToBuy.text(ingredientTitle);
+                ingredientToBuy.addClass("recipeIngredients");
+                container.append(ingredientToBuy);
+                data.slice();
+                destination.push(ingredientTitle);
+                redraw();
+                counter();
+            }
         })
     }
+    $(document).on("click","#addToListLunch5",function(){
+        $(this).attr('disabled', true);
+    });
+    function generateSnacksList (container,data,destination){
+        $("#addToListSnacks9").click(function (){
+            for(let i=0;i<ingrSnacks9.length;i++){
+                const ingredientTitle = data[i];
+                const checkBox = $(document.createElement("input")).prop({
+                    type: "checkbox"
+                }); 
+                container.append(checkBox);
+                const ingredientToBuy = $(document.createElement("h2"));
+                ingredientToBuy.text(ingredientTitle);
+                ingredientToBuy.addClass("recipeIngredients");
+                container.append(ingredientToBuy);
+                data.slice();
+                destination.push(ingredientTitle);
+                redraw();
+                counter();
+            }
+        })
+    }
+    $(document).on("click","#addToSnacks9",function(){
+        $(this).attr('disabled', true);
+    });
+    function generateDinnerList (container,data,destination){
+        $("#addToListDinner13").click(function (){
+            for(let i=0;i<ingrDinner13.length;i++){
+                const ingredientTitle = data[i];
+                const checkBox = $(document.createElement("input")).prop({
+                    type: "checkbox"
+                }); 
+                container.append(checkBox);
+                const ingredientToBuy = $(document.createElement("h2"));
+                ingredientToBuy.text(ingredientTitle);
+                ingredientToBuy.addClass("recipeIngredients");
+                container.append(ingredientToBuy);
+                data.slice();
+                destination.push(ingredientTitle);
+                redraw();
+                counter();
+            }
+        })
+    }
+    $(document).on("click","#addToDinner13",function(){
+        $(this).attr('disabled', true);
+    });
+
+})
