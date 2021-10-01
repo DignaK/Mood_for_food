@@ -92,9 +92,15 @@ $(document).ready(()=>{
 
     // ADD RECIPE TO SHOPPING LIST
     function generateBreakfastList (container,data,destination){
-        $("#addToListBreakfast1").click(()=>{
+        $(".addButton").click(()=>{
+            const buttonId = $(this).attr("id");
+            console.info(buttonId);
             for(let i=0;i<ingrBreakfast1.length;i++){
                 const ingredientTitle = data[i];
+                const checkBox = $(document.createElement("input")).prop({
+                    type: "checkbox"
+                }); 
+                container.append(checkBox);
                 const ingredientToBuy = $(document.createElement("h2"));
                 ingredientToBuy.text(ingredientTitle);
                 ingredientToBuy.addClass("recipeIngredients");
