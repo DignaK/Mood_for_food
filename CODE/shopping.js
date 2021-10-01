@@ -25,11 +25,6 @@ $(document).ready(()=>{
         }
         generateIngredientsList($(".shopping-list"), shoppingList, ingredients);
     }
-    
-    generateBreakfastList($("#breakfastShoppingList"),ingrBreakfast1,breakfastList);
-    generateLunchList($("#lunchShoppingList"),ingrLunch5,lunchList);
-    generateSnacksList($("#snacksShoppingList"),ingrSnacks9,snacksList);
-    generateDinnerList($("#dinnerShoppingList"),ingrDinner13,dinnerList);
 
     function generateIngredientsList (container,data,destination){
         container.empty();
@@ -103,6 +98,12 @@ $(document).ready(()=>{
 
 
     // ADD RECIPE TO SHOPPING LIST
+    
+    generateBreakfastList($("#breakfastShoppingList"),ingrBreakfast1,breakfastList);
+    generateLunchList($("#lunchShoppingList"),ingrLunch5,lunchList);
+    generateSnacksList($("#snacksShoppingList"),ingrSnacks9,snacksList);
+    generateDinnerList($("#dinnerShoppingList"),ingrDinner13,dinnerList);
+
     function generateBreakfastList (container,data,destination){
         $("#addToListBreakfast1").click(function (){
             for(let i=0;i<ingrBreakfast1.length;i++){
@@ -117,7 +118,6 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                // redraw();
                 counter();
             }
         })
@@ -125,6 +125,7 @@ $(document).ready(()=>{
     $(document).on("click","#addToListBreakfast1",function(){
         $(this).attr('disabled', true);
     });
+
     function generateLunchList (container,data,destination){
         $("#addToListLunch5").click(function (){
             for(let i=0;i<ingrLunch5.length;i++){
@@ -139,7 +140,6 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                // redraw();
                 counter();
             }
         })
@@ -147,6 +147,7 @@ $(document).ready(()=>{
     $(document).on("click","#addToListLunch5",function(){
         $(this).attr('disabled', true);
     });
+
     function generateSnacksList (container,data,destination){
         $("#addToListSnacks9").click(function (){
             for(let i=0;i<ingrSnacks9.length;i++){
@@ -161,7 +162,6 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                // redraw();
                 counter();
             }
         })
@@ -169,6 +169,7 @@ $(document).ready(()=>{
     $(document).on("click","#addToSnacks9",function(){
         $(this).attr('disabled', true);
     });
+
     function generateDinnerList (container,data,destination){
         $("#addToListDinner13").click(function (){
             for(let i=0;i<ingrDinner13.length;i++){
@@ -183,7 +184,6 @@ $(document).ready(()=>{
                 container.append(ingredientToBuy);
                 data.slice();
                 destination.push(ingredientTitle);
-                // redraw();
                 counter();
             }
         })
