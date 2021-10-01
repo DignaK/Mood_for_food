@@ -21,6 +21,16 @@ $(document).ready(()=>{
   })
 })
 
+
+//FUNCTION TO LINK FROM IMAGE CLICK TO RECIPES
+function imageClick() {
+  $("#toLink").click(()=>{
+    $(".slideshow-container").hide();
+    $(".recipes").show();
+    $(".shopping").hide();
+})
+};
+
 // HOME
 var slideIndex = 0;
 showSlides();
